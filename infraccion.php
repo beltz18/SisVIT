@@ -3,7 +3,9 @@
   include './client/partials/nav.php';
 ?>
 
-  <h1>Infraccion</h1>
+  <div class="container">
+    <h1>Infraccion</h1>
+  </div>
 
 <?php
   include './client/partials/footer.php';
