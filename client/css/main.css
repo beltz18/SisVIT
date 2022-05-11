@@ -27,10 +27,9 @@ body {
   justify-content: center;
 }
 
-.nnn {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
+.container-x {
+  height: 100%;
+  padding: 30px 15%;
 }
 
 .www {
@@ -38,4 +37,16 @@ body {
   height: 150px;
   margin-right: 20px;
   padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .nnn {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .www {
+    width: 100%;
+  }
 }
