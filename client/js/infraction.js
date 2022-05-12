@@ -52,9 +52,37 @@ $(document).ready(function () {
     })
   
     .done((data) => {
-      console.log("fine", {data})
+      console.log(data)
+      if (data == 1) {
+        alert("Multa registrada!")
+        location.reload()
+      }else{
+        alert("No se pudo registrar, verifique el número de cédula de la persona")
+      }
     })
   
+    .fail((err) => {
+      console.log(err.responseText)
+    })
+  })
+
+  $("#floating_last_name").on("keyup", () => {
+    ced = document.querySelector("#floating_last_name").value
+    $.ajax({
+      type: "POST",
+      url: "./server/controllers/search_person.php",
+      dataType: "json",
+      data: {ced}
+    })
+
+    .done((data) => {
+      if (data != "dont") {
+        console.log(data)
+        document.querySelector("#floating_first_name").value=data.nam_per
+        
+      }
+    })
+
     .fail((err) => {
       console.log(err.responseText)
     })

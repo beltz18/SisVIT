@@ -22,11 +22,22 @@ class Database {
     return $conn;
   }
 
-  public function exec ($sql) {
-    if ($con = $this->connect()->query()) {
+  public function execute ($sql) {
+    if ($con = $this->connect()->query($sql)) {
       return true;
     } else {
       return false;
+    }
+  }
+
+  public function getAllData($sql) {
+    if ($con = $this->connect()->query($sql)) {
+      if ($con->num_rows>0) {
+        $res = $con->fetch_assoc();
+      }else{
+        $res = "dont";
+      }
+      return $res;
     }
   }
 }

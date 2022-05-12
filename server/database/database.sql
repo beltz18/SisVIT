@@ -21,6 +21,8 @@ CREATE TABLE IF NOT EXISTS persona (
   idt_per INT UNSIGNED AUTO_INCREMENT,
   ced_per VARCHAR(15),
   nam_per VARCHAR(99),
+  cod_deu SET('0', '1', '2', '3') NOT NULL,
+  yea_deu YEAR(4) NOT NULL,
   PRIMARY KEY (idt_per),
   CONSTRAINT UNIQUE (ced_per)
 );
@@ -33,8 +35,7 @@ CREATE TABLE IF NOT EXISTS multa (
   plc_veh VARCHAR(10) NOT NULL,
   mod_veh VARCHAR(99) NOT NULL,
   tlf_per VARCHAR(15) NOT NULL,
-  PRIMARY KEY (idt_mul),
-  FOREIGN KEY (ced_per) REFERENCES persona (ced_per)
+  PRIMARY KEY (idt_mul)
 );
 
 INSERT INTO 
