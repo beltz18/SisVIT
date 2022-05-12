@@ -4,17 +4,21 @@
 ?>
   <br>
   <div class="container-body nnn">
-    <div class="www p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
-      <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
+    <div class="www flex-card-x p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
+      <i class="bx bx-user icon"></i>
+      Usuarios registrados: <b>5</b>
     </div>
-    <div class="www p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
-      <span class="font-medium">Success alert!</span> Change a few things up and try submitting again.
+    <div class="www flex-card-x p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+      <i class="bx bxs-car icon"></i>
+      Vehiculos registrados: <b>5</b>
     </div>
-    <div class="www p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
-      <span class="font-medium">Warning alert!</span> Change a few things up and try submitting again.
+    <div class="www p-4 flex-card-x mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+      <i class="bx bx-info-circle icon"></i>
+      Infracciones esta semana: <b>5</b>
     </div>
-    <div class="www p-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300" role="alert">
-      <span class="font-medium">Dark alert!</span> Change a few things up and try submitting again.
+    <div class="www flex-card-x p-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300" role="alert">
+      <i class="bx bx-error icon"></i>
+      Infracciones esta mes: <b>5</b>
     </div>
   </div>
   <div class="container-body">
@@ -29,10 +33,10 @@
       <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
+            El Sistema Vial de Infracciones de Transito (SisVIT) es un sistema de información que permite la gestión de infracciones en el Municipio Cárdenas.
           </p>
           <p class="text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
+            Todo esto se logra gracias al trabajo de recolección de datos que son manejados por los cuerpos de seguridad y agentes competentes con la finalidad de crear conciencia con las normativas viales.
           </p>
         </div>
       </div>
@@ -47,7 +51,7 @@
       <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea cupiditate aliquam, laborum facere recusandae quae et. Ullam, libero magni. Placeat reprehenderit error suscipit nulla doloremque fugit dignissimos perspiciatis adipisci.
           </p>
           <p class="mb-2 text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.

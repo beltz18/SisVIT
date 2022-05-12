@@ -24,6 +24,20 @@ ul.flex li a {
   height: 100vh;
 }
 
+.icon {
+  font-size: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 8px;
+}
+
+.flex-card-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .container-body {
   padding: 30px 5%;
   height: 100%;
