@@ -1,9 +1,11 @@
 <?php
-  include './client/partials/head-login.php';
-  include './client/partials/nav-header.php';
-
   include './server/models/conexion.php';
   include './server/models/users.php';
+  if($_SESSION['active'] == TRUE) {
+    header('Location: ./index.php');
+  }
+  include './client/partials/head-login.php';
+  include './client/partials/nav-header.php';
   $user = new User();
 ?>
 

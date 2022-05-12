@@ -6,7 +6,8 @@ class User extends Database {
     $num = $con->num_rows;
     if($num > 0) {
       $row = $con->fetch_assoc();
-      $_SESSION['usr'] = $row['usr_usr'];
+      $_SESSION['active'] = true;
+      $_SESSION['usr']    = $row['usr_usr'];
       header('Location: ./index.php');
     } else {
       return false;

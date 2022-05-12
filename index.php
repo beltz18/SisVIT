@@ -1,4 +1,9 @@
 <?php
+  include './server/models/conexion.php';
+  include './server/models/users.php';
+  if($_SESSION['active'] == FALSE) {
+    header('Location: ./login.php');
+  }
   include './client/partials/head.php';
   include './client/partials/nav.php';
 ?>

@@ -5,8 +5,8 @@ USE sisvit;
 DROP TABLE IF EXISTS usuario;
 CREATE TABLE IF NOT EXISTS usuario (
   idt_usr INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  nam_usr VARCHAR(99) NOT NULL,
   ced_usr VARCHAR(15) NOT NULL,
+  nam_usr VARCHAR(99) NOT NULL,
   usr_usr VARCHAR(20) NOT NULL,
   psw_usr VARCHAR(32) NOT NULL,
   acc_lvl SET('admin','poli','user') NOT NULL,
@@ -14,6 +14,15 @@ CREATE TABLE IF NOT EXISTS usuario (
   PRIMARY KEY (idt_usr),
   CONSTRAINT UNIQUE (ced_usr),
   CONSTRAINT UNIQUE (usr_usr)
+);
+
+DROP TABLE IF EXISTS persona;
+CREATE TABLE IF NOT EXISTS persona (
+  idt_per INT UNSIGNED AUTO_INCREMENT,
+  ced_per VARCHAR(15),
+  nam_per VARCHAR(99),
+  PRIMARY KEY (idt_per),
+  CONSTRAINT UNIQUE (ced_per)
 );
 
 INSERT INTO 
