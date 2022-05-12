@@ -25,6 +25,18 @@ CREATE TABLE IF NOT EXISTS persona (
   CONSTRAINT UNIQUE (ced_per)
 );
 
+DROP TABLE IF EXISTS multa;
+CREATE TABLE IF NOT EXISTS multa (
+  idt_mul INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  ced_per VARCHAR(15) NOT NULL,
+  mul_mul VARCHAR(999) NOT NULL,
+  plc_veh VARCHAR(10) NOT NULL,
+  mod_veh VARCHAR(99) NOT NULL,
+  tlf_per VARCHAR(15) NOT NULL,
+  PRIMARY KEY (idt_mul),
+  FOREIGN KEY (ced_per) REFERENCES persona (ced_per)
+);
+
 INSERT INTO 
   usuario
 (nam_usr,ced_usr,usr_usr,psw_usr,acc_lvl)

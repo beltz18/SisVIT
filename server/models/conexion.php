@@ -21,4 +21,12 @@ class Database {
     endif;
     return $conn;
   }
+
+  public function exec ($sql) {
+    if ($con = $this->connect()->query()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
