@@ -15,9 +15,9 @@
     </div>
 
     <div class="flex items-center mb-4">
-      <input id="checkbox-3" name="ch3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-      <label for="checkbox-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-        No usar el cinturón de seguridad
+      <input id="checkbox-11" name="ch11" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="checkbox-11" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+        Cruce indebido
       </label>
     </div>
 
@@ -31,7 +31,14 @@
     <div class="flex items-center mb-4">
       <input id="checkbox-5" name="ch5" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
       <label for="checkbox-5" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-        Venta de productos en la via pública
+        Conducir a exceso de velocidad
+      </label>
+    </div>
+
+    <div class="flex items-center mb-4">
+      <input id="checkbox-12" name="ch12" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="checkbox-12" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+        Realizar maniobras prohibidas
       </label>
     </div>
   </div>
@@ -71,6 +78,12 @@
         Conducir con licencia vencida
       </label>
     </div>
+
+    <div class="flex items-center mb-4">
+      <input id="checkbox-3" name="ch3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="checkbox-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+        No usar el cinturón de seguridad
+      </label>
+    </div>
   </div>
-  
 </div>

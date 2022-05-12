@@ -38,10 +38,10 @@
       <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            El Sistema Vial de Infracciones de Transito (SisVIT) es un sistema de información que permite la gestión de infracciones en el Municipio Cárdenas.
+            El Sistema Vial de Infracciones de Tránsito (SisVIT) es un sistema de información que permite el registro y seguimiento de infracciones de tránsito en el Municipio Cárdenas.
           </p>
           <p class="text-gray-500 dark:text-gray-400">
-            Todo esto se logra gracias al trabajo de recolección de datos que son manejados por los cuerpos de seguridad y agentes competentes con la finalidad de crear conciencia con las normativas viales.
+            Todo esto se logra gracias al trabajo de recolección de datos que son manejados por los cuerpos de seguridad y agentes competentes con la finalidad de crear conciencia sobre el correcto uso de las normativas viales.
           </p>
         </div>
       </div>
@@ -56,10 +56,10 @@
       <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea cupiditate aliquam, laborum facere recusandae quae et. Ullam, libero magni. Placeat reprehenderit error suscipit nulla doloremque fugit dignissimos perspiciatis adipisci.
+            <li>La ciudadanía, que podrá consultar su historial de infracciones y multas a cancelar ante el Municipio Cárdenas</li>
           </p>
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
+            <li>Las autoridades competentes, para el registro automatizado de las sanciones a los infractores de Tránsito Terrestre.</li>
           </p>
         </div>
       </div>
@@ -74,23 +74,17 @@
       <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
         <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sunt fugiat consequatur quam iusto aspernatur, voluptates deserunt eum maxime minima neque consectetur ullam quos dolor! Non aperiam esse asperiores soluta.
+            Sí, a través del modulo especializado para <a href="consulta.php" class="text-blue-600 dark:text-blue-500 hover:underline">consultas</a>: 
           </p>
           <ul class="pl-5 list-disc text-gray-500 dark:text-gray-400">
             <li>
               <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">
-                Option 1
+                Consulta por cédula
               </a>
             </li>
             <li>
               <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">
-                Option 2
+                Consulta por placa
               </a>
             </li>
           </ul>

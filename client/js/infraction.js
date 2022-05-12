@@ -6,12 +6,14 @@ $(document).ready(function () {
       'Incurrir en dos o más infracciones',
       'No usar el cinturón de seguridad',
       'Estacionar sobre el paso peatonal',
-      'Venta de productos en la via pública',
+      'Conducir a exceso de velocidad',
       'Desatender a la autoridad',
       'Infringir señales de transito',
       'Conducir sin placas',
       'Conducir sin licencia',
-      'Conducir con licencia vencida'
+      'Conducir con licencia vencida',
+      'Cruce indebido',
+      'Realizar maniobras prohibidas'
     ]
 
     ced = document.querySelector("#floating_last_name").value
@@ -30,11 +32,13 @@ $(document).ready(function () {
     ch8  = document.querySelector("#checkbox-8").checked
     ch9  = document.querySelector("#checkbox-9").checked
     ch10 = document.querySelector("#checkbox-10").checked
-    let lista = [ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10]
+    ch11 = document.querySelector("#checkbox-11").checked
+    ch12 = document.querySelector("#checkbox-12").checked
+    let lista = [ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12]
     let new_lista = []
     let val = ""
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 12; i++) {
       if (lista[i] == true) {
         new_lista.push(multas[i])
       }
@@ -83,6 +87,13 @@ $(document).ready(function () {
           'Aseo urbano',
           'Trimestres'
         ]
+        if (data.cod_deu == 0) {
+          document.querySelector(".multing").classList.add("bg-green-500")
+          document.querySelector(".deuda-x").classList.add("title")
+        } else {
+          document.querySelector(".multing").classList.add("bg-red-500")
+          document.querySelector(".deuda-x").classList.add("title")
+        }
         if (data.cod_deu != 0) {
           document.querySelector(".ano_deuda").innerHTML=data.yea_deu
         }
