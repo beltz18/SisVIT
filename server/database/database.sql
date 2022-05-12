@@ -15,3 +15,9 @@ CREATE TABLE IF NOT EXISTS usuario (
   CONSTRAINT UNIQUE (ced_usr),
   CONSTRAINT UNIQUE (usr_usr)
 );
+
+INSERT INTO 
+  usuario
+(nam_usr,ced_usr,usr_usr,psw_usr,acc_lvl)
+  VALUES
+('Andi Montilla Sanchez', '26068764', 'beltz18', '81dc9bdb52d04dc20036dbd8313ed055', 'admin');
