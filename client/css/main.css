@@ -83,8 +83,8 @@ ul.flex li a {
   border: 1px solid rgba(0, 0, 0, .115);
   border-radius: 5px;
   padding: 30px;
-  border-top: 3px solid rgba(20, 70, 233, 0.767);
-  border-bottom: 3px solid rgba(20, 70, 233, 0.767);
+  border-top: 3px solid #76A9FA;
+  border-bottom: 3px solid #76A9FA;
   background-color: #fff;
   float: right;
   margin-right: 1%;

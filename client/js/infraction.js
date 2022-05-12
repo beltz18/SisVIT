@@ -77,9 +77,17 @@ $(document).ready(function () {
 
     .done((data) => {
       if (data != "dont") {
-        console.log(data)
+        let tipo_deuda = [
+          'Solvente',
+          'Derecho de frente',
+          'Aseo urbano',
+          'Trimestres'
+        ]
+        if (data.cod_deu != 0) {
+          document.querySelector(".ano_deuda").innerHTML=data.yea_deu
+        }
         document.querySelector("#floating_first_name").value=data.nam_per
-        
+        document.querySelector(".tip_deuda").innerHTML=tipo_deuda[data.cod_deu]
       }
     })
 

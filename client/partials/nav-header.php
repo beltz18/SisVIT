@@ -1,4 +1,4 @@
-<nav class="bg-blue-600 border-gray-200 px-4 sm:px-4 py-4 sm:py-4 rounded dark:bg-gray-800">
+<nav class="bg-blue-400 border-gray-200 px-4 sm:px-4 py-4 sm:py-4 rounded dark:bg-gray-800">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="#" class="flex items-center">
       <span class="self-center xxl font-semibold whitespace-nowrap dark:text-white">

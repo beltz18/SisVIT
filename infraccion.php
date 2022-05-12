@@ -38,6 +38,14 @@
       </div>
 
       <fieldset>
+        <b>Deuda pendiente:</b>
+        <span class="tip_deuda"></span> 
+        <b><span class="ano_deuda"></span></b>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
         <legend>Infracciones cometidas</legend><br>
         <?php include './client/partials/option-infraction.php'; ?>
       </fieldset>
