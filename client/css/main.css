@@ -32,6 +32,21 @@ body {
   padding: 30px 15%;
 }
 
+.myform {
+  border: 1px solid rgba(0, 0, 0, .115);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
 .www {
   width: 200px;
   height: 150px;

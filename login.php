@@ -1,11 +1,9 @@
 <?php
   include './client/partials/head.php';
-  include './client/partials/nav.php';
+  include './client/partials/nav-header.php';
 ?>
 
-  <div class="container">
-    <h1>Registro</h1>
-  </div>
+  <h1>Login</h1>
 
 <?php
   include './client/partials/footer.php';
