@@ -8,4 +8,4 @@
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
   <link rel="stylesheet" href="./client/css/main.css">
 </head>
-<body class="body1">
+<body class="body">

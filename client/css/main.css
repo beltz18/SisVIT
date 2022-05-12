@@ -15,13 +15,17 @@ ul.flex li a {
   font-size: 17px;
 }
 
-body {
+.body {
   width: 100vw;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
 }
 
 .container-body {
   padding: 30px 5%;
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -47,8 +51,23 @@ body {
   margin-bottom: 30px;
 }
 
+.center {
+  margin-top: -60px;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  border: 1px solid rgba(0, 0, 0, .115);
+  border-radius: 5px;
+  padding: 30px;
+  border-top: 3px solid rgba(20, 70, 233, 0.767);
+  border-bottom: 3px solid rgba(20, 70, 233, 0.767);
+}
+
 .www {
-  width: 200px;
+  width: 25%;
   height: 150px;
   margin-right: 20px;
   padding: 10px;
