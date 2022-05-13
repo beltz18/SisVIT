@@ -45,7 +45,7 @@ $(document).ready(function () {
     }
 
     new_lista.forEach(item => {
-      val += item+","
+      val += item+", "
     })
 
     $.ajax({
@@ -99,6 +99,23 @@ $(document).ready(function () {
         }
         document.querySelector("#floating_first_name").value=data.nam_per
         document.querySelector(".tip_deuda").innerHTML=tipo_deuda[data.cod_deu]
+
+        $.ajax({
+          type: "POST",
+          url: "./server/controllers/getMultipleMults.php",
+          dataType: "json",
+          data: {ced}
+        })
+
+        .done((data) => {
+          if(data.suma > 1) {
+            alert("Este usuario tiene más de dos multas sin cancelar, se ha abierto una orden de decomisión del vehículo")
+          }
+        })
+
+        .fail((err) => {
+          console.log(err.responseText)
+        })
       }
     })
 
