@@ -46,4 +46,3 @@ function searchOne(val) {
     console.log(err.responseText)
   })
 }
-searchOne("all")
