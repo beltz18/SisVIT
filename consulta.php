@@ -31,25 +31,25 @@
             Placa
           </th>
           <th scope="col" class="px-6 py-3">
-            Fecha
+            Modelo vehículo
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="tbody">
         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap" id="nombre">
             Andi Montilla
           </th>
-          <td class="px-6 py-4">
+          <td class="px-6 py-4" id="cedula">
             26068764
           </td>
-          <td class="px-6 py-4">
+          <td class="px-6 py-4" id="tipo">
             Pasar semaforo en rojo
           </td>
-          <td class="px-6 py-4">
+          <td class="px-6 py-4" id="placa">
             ABC123
           </td>
-          <td class="px-6 py-4">
+          <td class="px-6 py-4" id="modelo">
             2022/02/02
           </td>
         </tr>
@@ -192,7 +192,8 @@
       </tbody>
     </table>
   </div>
-
+  <script src="./client/js/jquery.min.js"></script>
+  <script src="./client/js/consult.js"></script>
 
 <?php
   include './client/partials/footer.php';

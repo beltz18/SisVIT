@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+error_reporting();
 class Database {
   private $host;
   private $user;
@@ -37,6 +37,13 @@ class Database {
       }else{
         $res = "dont";
       }
+      return $res;
+    }
+  }
+
+  public function getLikeData($sql) {
+    if ($con = $this->connect()->query($sql)) {
+      $res = $con->fetch_assoc();
       return $res;
     }
   }
