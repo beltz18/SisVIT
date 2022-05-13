@@ -9,5 +9,5 @@ if ($val == "all") {
   $sql = "SELECT * FROM multa WHERE ced_per LIKE '%$val%' OR mul_mul LIKE '%$val%' OR plc_veh LIKE '%$val%' OR mod_veh LIKE '%$val%' OR tlf_per LIKE '%$val%';";
 }
 
-$a   = $DB->getLikeData($sql);
+$a   = $DB->renderingMultTable($sql);
 echo json_encode($a);
