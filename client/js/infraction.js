@@ -99,23 +99,23 @@ $(document).ready(function () {
         }
         document.querySelector("#floating_first_name").value=data.nam_per
         document.querySelector(".tip_deuda").innerHTML=tipo_deuda[data.cod_deu]
+      }
+    })
 
-        $.ajax({
-          type: "POST",
-          url: "./server/controllers/getMultipleMults.php",
-          dataType: "json",
-          data: {ced}
-        })
+    .fail((err) => {
+      console.log(err.responseText)
+    })
 
-        .done((data) => {
-          if(data.suma >= 1) {
-            alert("Este usuario tiene una o más multas sin cancelar, se ha abierto una orden de detención del vehículo")
-          }
-        })
+    $.ajax({
+      type: "POST",
+      url: "./server/controllers/getMultipleMults.php",
+      dataType: "json",
+      data: {ced}
+    })
 
-        .fail((err) => {
-          console.log(err.responseText)
-        })
+    .done((data) => {
+      if(data.suma >= 1) {
+        alert("Este usuario tiene una o más multas sin cancelar, se ha abierto una orden de detención del vehículo")
       }
     })
 
