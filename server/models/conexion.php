@@ -78,4 +78,26 @@ class Database {
     }
     return $view;
   }
+
+  public function getCount() {
+    $sq1 = "SELECT COUNT(idt_per) AS suma_per FROM persona;";
+    $co1 = $this->connect()->query($sq1);
+    $re1 = $co1->fetch_assoc();
+
+    $sq2 = "SELECT COUNT(plc_veh) AS suma_plc FROM multa;";
+    $co2 = $this->connect()->query($sq2);
+    $re2 = $co2->fetch_assoc();
+
+    $sq3 = "SELECT COUNT(idt_mul) AS suma_mul FROM multa;";
+    $co3 = $this->connect()->query($sq3);
+    $re3 = $co3->fetch_assoc();
+
+    $array = array(
+      'suma_per' => $re1['suma_per'],
+      'suma_plc' => $re2['suma_plc'],
+      'suma_mul' => $re3['suma_mul']
+    );
+
+    return $array;
+  }
 }
