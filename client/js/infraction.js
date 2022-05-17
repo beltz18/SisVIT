@@ -108,8 +108,8 @@ $(document).ready(function () {
         })
 
         .done((data) => {
-          if(data.suma > 1) {
-            alert("Este usuario tiene más de dos multas sin cancelar, se ha abierto una orden de decomisión del vehículo")
+          if(data.suma >= 1) {
+            alert("Este usuario tiene una o más multas sin cancelar, se ha abierto una orden de detención del vehículo")
           }
         })
 
