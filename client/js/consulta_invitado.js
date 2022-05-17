@@ -1,15 +1,12 @@
-$(document).ready(function(){
-  $("#table-search").on("keyup", () => {
-    val = document.querySelector("#table-search").value
-    if (val != "") {
-      searchOne(val)
-    }else{
-      searchOne("all")
-    }
+$(document).ready(function () {
+  $("#search").on("click", () => {
+    let value = document.querySelector("#table-search").value
+    console.log(value)
+    search(value)
   })
 })
 
-function searchOne(val) {
+function search(val) {
   $.ajax({
     type: 'POST',
     url: './server/controllers/search.php',
@@ -25,5 +22,3 @@ function searchOne(val) {
     console.log(err.responseText)
   })
 }
-
-searchOne("all")

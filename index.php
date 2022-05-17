@@ -6,24 +6,26 @@
   }
   include './client/partials/head.php';
   include './client/partials/nav.php';
+  $DB = new Database();
+  $a  = $DB->getCount();
 ?>
   <br>
   <div class="container-body nnn">
     <div class="www flex-card-x p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800" role="alert">
       <i class="bx bx-user icon"></i>
-      Usuarios registrados: <b>5</b>
+      Usuarios registrados: <b><?php echo $a['suma_per']; ?></b>
     </div>
     <div class="www flex-card-x p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
       <i class="bx bxs-car icon"></i>
-      Vehiculos registrados: <b>5</b>
+      Vehiculos registrados: <b><?php echo $a['suma_plc']; ?></b>
     </div>
     <div class="www p-4 flex-card-x mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
       <i class="bx bx-info-circle icon"></i>
-      Infracciones esta semana: <b>5</b>
+      Infracciones esta semana: <b><?php echo $a['suma_mul']; ?></b>
     </div>
     <div class="www flex-card-x p-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300" role="alert">
       <i class="bx bx-error icon"></i>
-      Infracciones esta mes: <b>5</b>
+      Infracciones esta mes: <b><?php echo $a['suma_mul']; ?></b>
     </div>
   </div>
   <div class="container-body">
