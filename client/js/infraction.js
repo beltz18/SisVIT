@@ -58,8 +58,25 @@ $(document).ready(function () {
     .done((data) => {
       console.log(data)
       if (data == 1) {
-        alert("Multa registrada!")
-        location.reload()
+        $.ajax({
+          type: "POST",
+          url: "./server/controllers/getMultipleMults.php",
+          dataType: "json",
+          data: {ced}
+        })
+    
+        .done((data) => {
+          if(data.suma > 1) {
+            alert("Multa registrada. ----AVISO: Este usuario tiene una o más multas sin cancelar, se ha abierto una orden de detención del vehículo----")
+          }else{
+            alert("Multa registrada!")
+          }
+          location.reload()
+        })
+    
+        .fail((err) => {
+          console.log(err.responseText)
+        })
       }else{
         alert("No se pudo registrar, verifique el número de cédula de la persona")
       }
@@ -99,23 +116,6 @@ $(document).ready(function () {
         }
         document.querySelector("#floating_first_name").value=data.nam_per
         document.querySelector(".tip_deuda").innerHTML=tipo_deuda[data.cod_deu]
-      }
-    })
-
-    .fail((err) => {
-      console.log(err.responseText)
-    })
-
-    $.ajax({
-      type: "POST",
-      url: "./server/controllers/getMultipleMults.php",
-      dataType: "json",
-      data: {ced}
-    })
-
-    .done((data) => {
-      if(data.suma >= 1) {
-        alert("Este usuario tiene una o más multas sin cancelar, se ha abierto una orden de detención del vehículo")
       }
     })
 
