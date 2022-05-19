@@ -46,14 +46,16 @@
       <br>
 
       <fieldset>
-        <legend>Infracciones cometidas</legend><br>
-        <?php include './client/partials/option-infraction.php'; ?>
+        <a href="#" class="mb-6 open_infraction_list">+ Abrir lista de infracciones</a>
+        <!-- <legend>Infracciones cometidas</legend><br>
+        <?php// include './client/partials/option-infraction.php'; ?> -->
       </fieldset>
 
       <button type="submit" id="btn_inf" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrar</button><br>
     </form>
   </div>
   <script src="./client/js/jquery.min.js"></script>
+  <script src="./client/js/lista_infracciones.js"></script>
   <script src="./client/js/infraction.js"></script>
 
 <?php

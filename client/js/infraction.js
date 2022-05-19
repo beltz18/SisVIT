@@ -124,4 +124,90 @@ $(document).ready(function () {
       console.log(err.responseText)
     })
   })
+
+  $('.open_infraction_list').on('click', () => {
+    view = "<p style='text-align:left;'>"
+    lista_infracciones.forEach(item => {
+      options = []
+      cond = item.id == 12 || item.id == 34 || item.id == 35
+      if (!cond) {
+        view += "<input type='checkbox' class='myCheck'/> "
+      }
+      view += `<b>${item.id}</b> <span class="ml-4">${item.infraccion}</span><br/><br/>`
+      if (cond) {
+        options.push(item.tipo)
+        switch (item.id) {
+          case 12:
+            options.forEach(element => {
+              view += ` <input type='radio' class='ml-4 radio'> ${element.a}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.b}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.c}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.d}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.e}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.f}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.g}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.h}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.i}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.j}<br/><br/>`
+            })
+          break
+            
+          case 34:
+            options.forEach(element => {
+              view += ` <input type='radio' class='ml-4 radio'> ${element.a}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.b}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.c}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.d}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.e}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.f}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.g}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.h}<br/><br/>`
+            })
+          break
+              
+          case 35:
+            options.forEach(element => {
+              view += ` <input type='radio' class='ml-4 radio'> ${element.a}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.b}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.c}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.d}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.e}<br/>
+                        <input type='radio' class='ml-4 radio'> ${element.f}<br/><br/>`
+            })
+          break
+        }
+      }
+    })
+    view += "</p>"
+
+    Swal.fire({
+      title: '<strong>Lista de infracciones</strong>',
+      html: view,
+      showCloseButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Procesar',
+      cancelButtonText: 'Cancelar',
+      focusConfirm: false,
+    }).then((result) => {
+      checkPressed = []
+      radioPressed = []
+      if (result.isConfirmed) {
+        check = document.querySelectorAll('.myCheck')
+        radio = document.querySelectorAll('.radio')
+        for (i = 0; i < check.length; i++) {
+          if (check[i].checked) checkPressed.push(i)
+        }
+        for (j = 0; j < radio.length; j++) {
+          if (radio[j].checked) radioPressed.push(j)
+        }
+        console.log({checkPressed,radioPressed})
+      } else {
+        Swal.fire({
+          title: 'Error',
+          icon: 'error',
+          text: 'La orden de infracción fue cancelada'
+        })
+      }
+    })
+  })
 })
