@@ -104,6 +104,7 @@ $(document).ready(function () {
           'Aseo urbano',
           'Trimestres'
         ]
+        
         if (data.cod_deu == 0) {
           document.querySelector(".multing").classList.add("bg-green-500")
           document.querySelector(".deuda-x").classList.add("title")
