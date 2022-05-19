@@ -220,3 +220,61 @@ lista_infracciones = [
 		"valor": 0.2
 	}
 ]
+
+function getWord(value) {
+  word = ""
+  value == 9 ? word = "j" : console.log("isn't j")
+  value == 8 ? word = "i" : console.log("isn't i")
+
+  value == 7 || value == 17 ? word = "h" : console.log("isn't h")
+  value == 6 || value == 16 ? word = "g" : console.log("isn't g")
+
+  if (!word) {
+    subar = ""
+    array = [
+      {
+        id: "0, 10, 18",
+        value: "a"
+      },
+      {
+        id: "1, 11, 19",
+        value: "b"
+      },
+      {
+        id: "2, 12, 20",
+        value: "c"
+      },
+      {
+        id: "3, 13, 21",
+        value: "d"
+      },
+      {
+        id: "4, 14, 22",
+        value: "e"
+      },
+      {
+        id: "5, 15, 23",
+        value: "f"
+      },
+    ]
+    array.forEach(item => {
+      subar = item.id.split(",")
+      for (i = 0; i < subar.length; i++) {
+        if (value == subar[i]) word = item.value
+      }
+    })
+  }
+  return word
+}
+
+// { 0, 10, 18 } = a
+// { 1, 11, 19 } = b
+// { 2, 12, 20 } = c
+// { 3, 13, 21 } = d
+// { 4, 14, 22 } = e
+// { 5, 15, 23 } = f
+
+// { 6, 16     } = g
+// { 7, 17     } = h
+// { 8         } = i
+// { 9         } = j

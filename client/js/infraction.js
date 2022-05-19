@@ -191,16 +191,26 @@ $(document).ready(function () {
     }).then((result) => {
       checkPressed = []
       radioPressed = []
+      multas       = []
       if (result.isConfirmed) {
         check = document.querySelectorAll('.myCheck')
         radio = document.querySelectorAll('.radio')
         for (i = 0; i < check.length; i++) {
-          if (check[i].checked) checkPressed.push(i)
+          if (check[i].checked) checkPressed.push(lista_infracciones[i])
         }
         for (j = 0; j < radio.length; j++) {
-          if (radio[j].checked) radioPressed.push(j)
+          if (j >= 0 && j <= 9) {
+            h = 11
+          }else if (j >= 10 && j <= 17) {
+            h = 33
+          }else if (j >= 18 && j <= 23) {
+            h = 34
+          }
+          let f = getWord(j)
+          if (radio[j].checked) radioPressed.push({h,f})
         }
-        console.log({checkPressed,radioPressed})
+        // console.log(lista_infracciones[radioPressed[0].h].tipo.find(item => item.tipo === radioPressed[0].f))
+        // console.log({checkPressed,radioPressed})
       } else {
         Swal.fire({
           title: 'Error',
@@ -211,3 +221,5 @@ $(document).ready(function () {
     })
   })
 })
+
+console.log(lista_infracciones[11].tipo, lista_infracciones[33].tipo, lista_infracciones[34].tipo)

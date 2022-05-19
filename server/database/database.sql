@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS multa (
   plc_veh VARCHAR(10) NOT NULL,
   mod_veh VARCHAR(99) NOT NULL,
   tlf_per VARCHAR(15) NOT NULL,
+  val_mul DECIMAL(10,2) UNSIGNED NOT NULL,
   PRIMARY KEY (idt_mul)
 );
 
