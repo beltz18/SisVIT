@@ -94,6 +94,7 @@
       </div>
     </div>
   </div>
+  <script src="./client/js/jquery.min.js"></script>
 
 <?php
   include './client/partials/footer.php';

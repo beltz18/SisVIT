@@ -8,9 +8,10 @@ class User extends Database {
       $row = $con->fetch_assoc();
       $_SESSION['active'] = true;
       $_SESSION['usr']    = $row['usr_usr'];
-      header('Location: ./index.php');
+      // header('Location: ./index.php');
+      return $row;
     } else {
-      return false;
+      return 0;
     }
   }
 }

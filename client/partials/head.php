@@ -7,6 +7,8 @@
   <title>SisVIT</title>
   <link rel="stylesheet" href="./client/css/flowbite.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
-  <link rel="stylesheet" href="./client/css/main.css">
+  <link rel="stylesheet" href="./client/css/main.css" />
+  <link rel="stylesheet" href="./client/css/sweetalert.min.css" />
+  <script src="./client/js/sweetalert.min.js"></script>
 </head>
 <body class="body1">
