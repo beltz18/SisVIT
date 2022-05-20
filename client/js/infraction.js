@@ -209,8 +209,8 @@ $(document).ready(function () {
           let f = getWord(j)
           if (radio[j].checked) radioPressed.push({h,f})
         }
-        // console.log(lista_infracciones[radioPressed[0].h].tipo.find(item => item.tipo === radioPressed[0].f))
-        // console.log({checkPressed,radioPressed})
+        console.log(lista_infracciones[radioPressed[0].h].tipo.find(item => item.tipo === radioPressed[0].f))
+        console.log({checkPressed,radioPressed})
       } else {
         Swal.fire({
           title: 'Error',
