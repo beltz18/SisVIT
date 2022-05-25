@@ -170,8 +170,40 @@ $(document).ready(function () {
           let f = getWord(j)
           if (radio[j].checked) radioPressed.push({h,f})
         }
-        console.log(lista_infracciones[radioPressed[0].h].tipo.find(item => item.tipo === radioPressed[0].f))
-        console.log({checkPressed,radioPressed})
+        alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+        sele  = []
+        radioPressed.forEach(item => {
+          values = Object.values(lista_infracciones[item.h].tipo)
+          val    = ""
+          for (i = 0; i < values.length; i++) {
+            if (item.f == alpha[i]) {
+              switch (item.h) {
+                case 11:
+                  val = "Estacionar "+values[i]
+                  break;
+
+                case 33:
+                  val = "Motociclistas que "+values[i]
+                  break;
+
+                case 34:
+                  val = "Ciclistas que "+values[i]
+                  break;
+              }
+              sele.push(val)
+            }
+          }
+        })
+        partialArray = []
+        checkPressed.forEach(item => {
+          partialArray.push(item.infraccion)
+        })
+        arrayMultas  = partialArray.concat(sele)
+        lista_multas = ""
+        arrayMultas.forEach(item => {
+          lista_multas += item+"; "
+        })
+        console.log(lista_multas)
       } else {
         Swal.fire({
           title: 'Error',
@@ -182,5 +214,3 @@ $(document).ready(function () {
     })
   })
 })
-
-console.log(lista_infracciones[11].tipo, lista_infracciones[33].tipo, lista_infracciones[34].tipo)
