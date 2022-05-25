@@ -1,20 +1,6 @@
 $(document).ready(function () {
   $("#btn_inf").on("click", (e) => {
     e.preventDefault()
-    let multas = [
-      'Conducir bajo efectos del alcohol',
-      'Incurrir en dos o más infracciones',
-      'No usar el cinturón de seguridad',
-      'Estacionar sobre el paso peatonal',
-      'Conducir a exceso de velocidad',
-      'Desatender a la autoridad',
-      'Infringir señales de transito',
-      'Conducir sin placas',
-      'Conducir sin licencia',
-      'Conducir con licencia vencida',
-      'Cruce indebido',
-      'Realizar maniobras prohibidas'
-    ]
 
     ced = document.querySelector("#floating_last_name").value
     nom = document.querySelector("#floating_first_name").value
@@ -22,7 +8,6 @@ $(document).ready(function () {
     mod = document.querySelector("#floating_password").value
     num = document.querySelector("#floating_phone").value
 
-    let new_lista = []
     let val = ""
 
     $.ajax({
