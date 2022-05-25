@@ -12,9 +12,9 @@ $val = $_POST['val'];
 $sql = "
 INSERT INTO
   multa
-(ced_per,mul_mul,plc_veh,mod_veh,tlf_per)
+(ced_per,nom_inf,mul_mul,plc_veh,mod_veh,tlf_per)
   VALUES
-('$ced', '$val', '$plc', '$mod', '$num');";
+('$ced', '$nom', '$val', '$plc', '$mod', '$num');";
 
 $a = $DB->execute($sql);
 echo $a;

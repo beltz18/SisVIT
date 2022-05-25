@@ -22,31 +22,8 @@ $(document).ready(function () {
     mod = document.querySelector("#floating_password").value
     num = document.querySelector("#floating_phone").value
 
-    ch1  = document.querySelector("#checkbox-1").checked
-    ch2  = document.querySelector("#checkbox-2").checked
-    ch3  = document.querySelector("#checkbox-3").checked
-    ch4  = document.querySelector("#checkbox-4").checked
-    ch5  = document.querySelector("#checkbox-5").checked
-    ch6  = document.querySelector("#checkbox-6").checked
-    ch7  = document.querySelector("#checkbox-7").checked
-    ch8  = document.querySelector("#checkbox-8").checked
-    ch9  = document.querySelector("#checkbox-9").checked
-    ch10 = document.querySelector("#checkbox-10").checked
-    ch11 = document.querySelector("#checkbox-11").checked
-    ch12 = document.querySelector("#checkbox-12").checked
-    let lista = [ch1,ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12]
     let new_lista = []
     let val = ""
-
-    for (let i = 1; i <= 12; i++) {
-      if (lista[i] == true) {
-        new_lista.push(multas[i])
-      }
-    }
-
-    new_lista.forEach(item => {
-      val += item+", "
-    })
 
     $.ajax({
       type: "POST",
@@ -56,7 +33,6 @@ $(document).ready(function () {
     })
   
     .done((data) => {
-      console.log(data)
       if (data == 1) {
         $.ajax({
           type: "POST",
