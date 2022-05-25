@@ -7,8 +7,7 @@ $(document).ready(function () {
     plc = document.querySelector("#floating_email").value
     mod = document.querySelector("#floating_password").value
     num = document.querySelector("#floating_phone").value
-
-    let val = ""
+    val = localStorage.getItem("multas")
 
     $.ajax({
       type: "POST",
@@ -32,6 +31,7 @@ $(document).ready(function () {
           }else{
             alert("Multa registrada!")
           }
+          localStorage.clear()
           location.reload()
         })
     
@@ -203,7 +203,7 @@ $(document).ready(function () {
         arrayMultas.forEach(item => {
           lista_multas += item+"; "
         })
-        console.log(lista_multas)
+        localStorage.setItem('multas', lista_multas)
       } else {
         Swal.fire({
           title: 'Error',
