@@ -91,6 +91,12 @@ ul.flex li a {
   width: 400px;
 }
 
+#btn_inf {
+  margin-top: 50px;
+  position: relative;
+  left: 45%;
+}
+
 .www {
   width: 25%;
   margin-right: 20px;
