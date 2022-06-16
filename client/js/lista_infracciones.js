@@ -56,6 +56,11 @@ lista_infracciones = [
 	},
 	{
 		"id": 12,
+		"infraccion": "Conducir vehículos desprovistos de los dispositivos de control, equipos o accesorios de uso obligatorio, relativos a las condiciones de seguridad o cuando dichos aditamentos presenten defectos de funcionamiento o no cumplan con las normas y demás características técnicas previstas en el reglamento de la Ley de Tránsito y Transporte Terrestre.",
+		"valor": 0.3
+	},
+	{
+		"id": 13,
 		"infraccion": "El estacionamiento de todo tipo de vehículos de motor, en las siguientes zonas:",
 		"valor": 0.3,
 		"tipo": {
@@ -72,18 +77,13 @@ lista_infracciones = [
 		}
 	},
 	{
-		"id": 13,
-		"infraccion": "Realizar labores de carga y descargas fuera del horario establecido en el artículo 78 de esta ordenanza",
-		"valor": 0.3
-	},
-	{
 		"id": 14,
-		"infraccion": "La circulación de vehículos que, por su estado de diseño, confort o mantenimiento, contravenga a los establecidos en el Artículo 88 de la presente Ordenanza",
+		"infraccion": "Realizar labores de carga y descargas fuera del horario establecido en la ordenanza",
 		"valor": 0.3
 	},
 	{
 		"id": 15,
-		"infraccion": "La circulación de vehículos pesados que no se ajuste a los establecidos en el Artículo 85 de la presente Ordenanza",
+		"infraccion": "La circulación de vehículos pesados que no se ajuste a los establecidos en la presente Ordenanza",
 		"valor": 0.3
 	},
 	{

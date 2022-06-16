@@ -98,7 +98,7 @@ $(document).ready(function () {
       if (cond) {
         options.push(item.tipo)
         switch (item.id) {
-          case 12:
+          case 13:
             options.forEach(element => {
               view += ` <input type='radio' class='ml-4 radio'> ${element.a}<br/>
                         <input type='radio' class='ml-4 radio'> ${element.b}<br/>
