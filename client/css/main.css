@@ -95,6 +95,7 @@ ul.flex li a {
   margin-top: 50px;
   position: relative;
   left: 45%;
+  width: 100px;
 }
 
 .www {
@@ -112,5 +113,9 @@ ul.flex li a {
 
   .www {
     width: 100%;
+  }
+
+  #btn_inf {
+    position: static;
   }
 }
