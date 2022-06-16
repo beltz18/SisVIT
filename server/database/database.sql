@@ -37,7 +37,10 @@ CREATE TABLE IF NOT EXISTS multa (
   mod_veh VARCHAR(99) NOT NULL,
   tlf_per VARCHAR(15) NOT NULL,
   val_mul DECIMAL(10,2) UNSIGNED NOT NULL,
-  PRIMARY KEY (idt_mul)
+  usr_usr VARCHAR(20) NOT NULL,
+  fch_reg TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (idt_mul),
+  FOREIGN KEY (usr_usr) REFERENCES usuario (usr_usr)
 );
 
 INSERT INTO 

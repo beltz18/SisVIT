@@ -45,6 +45,7 @@ $(document).ready(function () {
   
     .fail((err) => {
       console.log(err.responseText)
+      console.log("La multa no pudo ser procesada por un error en el servidor")
     })
   })
 
