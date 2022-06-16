@@ -90,7 +90,7 @@ $(document).ready(function () {
     view = "<p style='text-align:left;'>"
     lista_infracciones.forEach(item => {
       options = []
-      cond = item.id == 12 || item.id == 34 || item.id == 35
+      cond = item.id == 13 || item.id == 34 || item.id == 35
       if (!cond) {
         view += "<input type='checkbox' class='myCheck'/> "
       }
